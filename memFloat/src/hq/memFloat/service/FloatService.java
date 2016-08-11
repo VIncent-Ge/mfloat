@@ -281,11 +281,11 @@ public class FloatService extends Service {
 		wmParams.y = (int) (y - mTouchStartY);
 		wm.updateViewLayout(view, wmParams);
 	}
-
+	
+	
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		Log.d("FloatService", "onStart");
-		// setForeground(true);
 //		startForegroundCompat(NOTIFICATION_ID, notification);
 		return super.onStartCommand(intent, flags, startId);
 	}
